@@ -21,7 +21,8 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:jsx-a11y/recommended',
-        'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
+        'plugin:prettier/recommended', // Make this the last element so prettier config overrides other formatting rules
+        'airbnb'
     ],
     rules: {
         'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Use our .prettierrc file as source
@@ -29,8 +30,14 @@ module.exports = {
         'react/prop-types': 0,
         'react/jsx-uses-react': 1,
         'react/jsx-uses-vars': 1,
-        'no-var': 'error',
+        'react/self-closing-comp': 1,
+        'react/jsx-max-props-per-line': 1,
+        'react/jsx-indent': 0,
+        'react/button-has-type': 0,
         'jsx-a11y/no-onchange': 'warn',
-        quotes: [2, 'single']
+        'no-var': 'error',
+        'comma-dangle': ['error', 'never'],
+        indent: ['error', 4],
+        'no-console': 0
     }
 };
