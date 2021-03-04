@@ -17,7 +17,8 @@ const Post = () => {
 
     return (
         <div>
-            <button onClick={handleChange}>click</button>;<button onClick={showData}>show</button>
+            <button onClick={handleChange}>click</button>
+            <button onClick={showData}>show</button>
         </div>
     );
 };
