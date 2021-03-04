@@ -7,12 +7,12 @@ const Post = () => {
     const userToken = useSelector((state) => state.auth.userToken);
 
     const handleChange = () => {
-            const token = 'cuonglv2602';
+        const token = 'cuonglv2602';
         dispatch(verifyUser(token));
     };
 
     const showData = () => {
-        console.log({ userToken }); 
+        console.log({ userToken });
     };
 
     return (

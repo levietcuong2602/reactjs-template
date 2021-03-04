@@ -27,17 +27,17 @@
         "lint": "eslint --fix .",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "lint-staged": {
         "**/*.{js,jsx,ts,tsx}": [
             "npm run lint",
             "npm run format",
             "git add ."
         ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
     },
     "eslintConfig": {
         "extends": [
