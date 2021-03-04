@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { verifyUser } from '../redux/auth/actions';
 
 const Post = () => {
-    const dispatch = useDispatch();
+    var dispatch = useDispatch();
     const userToken = useSelector((state) => state.auth.userToken);
 
     const handleChange = () => {
