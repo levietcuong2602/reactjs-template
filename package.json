@@ -28,7 +28,7 @@
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx,css,md,json}": [
+        "**/*.{js,jsx,ts,tsx}": [
             "npm run lint",
             "npm run format",
             "git add ."
