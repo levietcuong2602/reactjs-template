@@ -34,10 +34,13 @@ module.exports = {
         'react/jsx-max-props-per-line': 1,
         'react/jsx-indent': 0,
         'react/button-has-type': 0,
+        'react/jsx-indent-props': 0,
+        'react/jsx-closing-bracket-location': 0,
         'jsx-a11y/no-onchange': 'warn',
         'no-var': 'error',
         'comma-dangle': ['error', 'never'],
         indent: ['error', 4],
-        'no-console': 0
+        'no-console': 0,
+        'prefer-arrow-callback': 0
     }
 };
