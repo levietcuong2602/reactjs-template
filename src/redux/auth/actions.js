@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 export const actionTypes = {
     VERIFY_USER: 'VERIFY_USER',
     VERIFY_USER_SUCCESS: 'VERIFY_USER_SUCCESS',

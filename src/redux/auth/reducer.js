@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import { actionTypes } from './actions';
 
 export const initialState = {
@@ -7,9 +8,10 @@ export const initialState = {
 
 export default (state = initialState, action) => {
     const { userToken } = action;
+
     switch (action.type) {
         case actionTypes.VERIFY_USER:
-            return Object.assign({}, state, { userToken, verified: false });
+            return { ...state, userToken, verified: false };
         default:
             return state;
     }
